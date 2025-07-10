@@ -1,39 +1,59 @@
+
+
 # 洛谷笔记新
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+## 介绍
 
-#### 软件架构
-软件架构说明
+欢迎使用洛谷笔记新！这是一个为用户提供便捷笔记功能的开源项目，特别适配洛谷平台的学习和练习场景。通过本项目，用户可以轻松记录解题思路、学习笔记等内容，提高学习效率。
 
+## 软件架构
 
-#### 安装教程
+本项目基于现代 Web 技术构建，主要采用以下技术栈：
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+- **前端**：使用 [Next.js](https://nextjs.org) 框架进行页面构建。
+- **样式**：CSS 样式通过 `globals.css` 进行全局管理。
+- **编辑器支持**：使用 `textarea` 作为基础编辑器，支持 Markdown 格式和 KaTeX 数学公式渲染。
 
-#### 使用说明
+## 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. 确保你已安装 [Node.js](https://nodejs.org)（建议使用最新稳定版）。
+2. 克隆仓库：
+   ```bash
+   git clone https://gitee.com/sunny-town/luogu-notes-new.git
+   ```
+3. 进入项目目录：
+   ```bash
+   cd luogu-notes-new
+   ```
+4. 安装依赖：
+   ```bash
+   npm install
+   ```
+5. 启动开发服务器：
+   ```bash
+   npm run dev
+   ```
 
-#### 参与贡献
+## 使用说明
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+- 所有笔记页面通过 `pages/[id].js` 动态路由实现，每个笔记通过唯一 ID 进行标识。
+- 用户可以通过编辑器输入 Markdown 内容，并实时预览渲染结果。
+- 数学公式支持 KaTeX 渲染，使用 `.katex` 和 `.katex-display` 类进行样式控制。
+- 点击按钮即可保存或导出笔记。
 
+## 参与贡献
 
-#### 特技
+我们欢迎社区的贡献！请通过以下步骤参与：
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1. Fork 仓库。
+2. 创建新分支 (`git checkout -b feature/your-feature-name`)。
+3. 提交更改 (`git commit -am 'Add some feature'`)。
+4. Push 到分支 (`git push origin feature/your-feature-name`)。
+5. 提交 Pull Request。
+
+## 特技
+
+- 支持 Markdown 编辑与实时预览。
+- 集成 KaTeX 渲染，适合数学内容记录。
+- 动态路由支持无限扩展笔记页面。
+- 简洁美观的 UI 设计，提升用户体验。
